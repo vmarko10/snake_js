@@ -1,0 +1,47 @@
+html, body {
+    background-color:slategrey;
+    text-align: center;
+}
+
+#main-grid-container {
+    position: absolute;
+    left: 50%; top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#main-grid {
+    background-color: rgb(79, 91, 100);
+    border-collapse: collapse;
+    border: 1px solid black;
+    table-layout: fixed;
+}
+
+#main-grid td {
+    position: relative;
+    border: 1px solid black;
+}
+
+.snake-block {
+    background-color: chartreuse;
+    position: absolute;
+    top: 0; left: 0;
+    height: 100%; width: 100%;
+    border: 1px solid red;
+}
+
+.food {
+    background-color: dodgerblue;
+    position: absolute;
+    top: 0; left: 0;
+    height: 100%; width: 100%;
+    border: 1px solid;
+}
+
+#point-counter {
+    position: absolute;
+    top: -80px; left: 50%;
+    transform: translateX(-50%);
+    font-size: 55px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
